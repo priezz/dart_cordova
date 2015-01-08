@@ -5,5 +5,5 @@ pub build
 # rm
 # mv build/web www
 git add .
-git commit -m $(date "+%Y-%m-%H %X")
+git commit -m "$(date '+%Y-%m-%H %X')"
 git push

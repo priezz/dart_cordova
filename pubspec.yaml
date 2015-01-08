@@ -1,4 +1,0 @@
-name: dart_cordova
-dependencies:
-  rikulo_gap: any
-  browser: any

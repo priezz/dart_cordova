@@ -2,6 +2,10 @@ Icon
 Icon?
 .DS_Store
 .*~.gz
+<<<<<<< HEAD
+npm-debug.log
+.@__thumb
+=======
 /.idea
 npm-debug.log
 /node_modules/
@@ -11,3 +15,4 @@ npm-debug.log
 /web/assets/vendor/*
 .@__thumb
 #!node_modules/google-routines.coffee
+>>>>>>> d371c21f4db24db4cd7e02811a992559a14e42a7

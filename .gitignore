@@ -6,7 +6,7 @@ Icon?
 npm-debug.log
 node_modules/*
 #!www/packages/
-packages
+packages/
 build/
 web/assets/vendor/*
 _i18n/visa

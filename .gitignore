@@ -1,0 +1,14 @@
+Icon
+Icon?
+.DS_Store
+.*~.gz
+.idea
+npm-debug.log
+node_modules/*
+packages
+build/
+web/assets/vendor/*
+_i18n/visa
+_i18n/residence
+.@__thumb
+#!node_modules/google-routines.coffee

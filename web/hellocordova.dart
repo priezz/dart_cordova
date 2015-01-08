@@ -7,9 +7,9 @@ import 'dart:js'; // as js;
 void accessAccelerometer() {
 	accelerometer.watchAcceleration(
 			(Acceleration acc) {
-				context['document'].write("t:${acc.timestamp}, x:${acc.x}, y:${acc.y}, z:${acc.z}");
+				writeToBody("t:${acc.timestamp}, x:${acc.x}, y:${acc.y}, z:${acc.z}");
 			},
-			() => context['document'].write("Fail to get acceleration."),
+			() => writeToBody("Fail to get acceleration."),
 			new AccelerometerOptions(frequency: 1000)
 	                                );
 }
@@ -18,12 +18,12 @@ void onDeviceReady(device) {
 	accessAccelerometer();
 
 	var persistent = context['PERSISTENT'];
-	context['document'].write( "Should be Constant PERSISTENT of LFS: " + persistent.toString() );
+	writeToBody( "Should be Constant PERSISTENT of LFS: " + persistent.toString() );
 	context.callMethod( 'requestFileSystem', [persistent, 0, onInitFs, initFsErrorHandler] );
 }
 
 void onInitFs(JsObject fs) {
-	context['document'].write( "Success" );
+	writeToBody( "Success" );
 	var fsroot = fs['root'];
 	createFile(fsroot);
 }
@@ -45,7 +45,7 @@ void initFsErrorHandler(e) {
 			msg = 'Unknown Error';
 	};
 
-	context['document'].write('Error: ' + msg);
+	writeToBody('Error: ' + msg);
 }
 
 void createFile(JsObject fsroot) {
@@ -54,12 +54,17 @@ void createFile(JsObject fsroot) {
 }
 
 void gotFileEntry(JsObject fileEntry) {
-	context['document'].write( fileEntry['fullPath'] );
+	writeToBody( fileEntry['fullPath'] );
+}
+
+void writeToBody( String s ) {
+	document.body.text += s;
 }
 
 
 void main() {
+	writeToBody( "App launched" );
 	Device.init()
 		.then((Device device) => onDeviceReady(device))
-		.catchError((ex, st) => context['document'].write( "Failed: $ex, $st") );
+		.catchError((ex, st) => writeToBody( "Failed: $ex, $st") );
 }

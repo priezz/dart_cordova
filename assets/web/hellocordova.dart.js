@@ -812,7 +812,7 @@ if(2>=z)return H.e(a,2)
 x=a[2]
 w=P.A(null,null)
 this.a.push(w)
-y=J.C0(y,this.gia()).br(0)
+y=J.kl(y,this.gia()).br(0)
 for(z=J.U6(y),v=J.U6(x),u=0;u<z.gv(y);++u)w.q(0,z.p(y,u),this.QS(v.p(x,u)))
 return w},
 Vf:function(a){var z,y,x,w,v,u,t
@@ -1282,7 +1282,7 @@ if(x!==-1)y.method=z[x+1]
 x=this.e
 if(x!==-1)y.receiver=z[x+1]
 return y},
-static:{"^":"lm,k1,Re,fN,qi,rZ,BX,tt,dt,A7",LX:function(a){var z,y,x,w,v,u
+static:{"^":"lm,k1,Re,fN,qi,rZ,BX,tt,dt,A7",cM:function(a){var z,y,x,w,v,u
 a=a.replace(String({}),'$receiver$').replace(new RegExp("[[\\]{}()*+?.\\\\^$|]",'g'),'\\$&')
 z=a.match(/\\\$[a-zA-Z]+\\\$/g)
 if(z==null)z=[]
@@ -2746,7 +2746,6 @@ $isa:true},
 Rn:{
 "^":"a;IN:Q@",
 gv:function(a){return this.Q.length},
-KF:function(a){this.Q+=H.d(a)},
 We:function(a,b){var z=J.Nx(a)
 if(!z.D())return
 if(b.length===0){do this.Q+=H.d(z.gk())
@@ -2826,7 +2825,7 @@ z=J.v1(a.left)
 y=J.v1(a.top)
 x=J.v1(this.gN(a))
 w=J.v1(this.gfg(a))
-return W.Up(W.VC(W.VC(W.VC(W.VC(0,z),y),x),w))},
+return W.Up(W.C0(W.C0(W.C0(W.C0(0,z),y),x),w))},
 $istn:true,
 $astn:function(){return[null]},
 "%":";DOMRectReadOnly"},
@@ -2919,7 +2918,7 @@ z=J.v1(a.left)
 y=J.v1(a.top)
 x=J.v1(a.width)
 w=J.v1(a.height)
-return W.Up(W.VC(W.VC(W.VC(W.VC(0,z),y),x),w))},
+return W.Up(W.C0(W.C0(W.C0(W.C0(0,z),y),x),w))},
 $istn:true,
 $astn:function(){return[null]},
 "%":"ClientRect"},
@@ -2936,7 +2935,7 @@ Nf:{
 "^":"qE;",
 $isGv:true,
 "%":"HTMLFrameSetElement"},
-VC:function(a,b){a=536870911&a+b
+C0:function(a,b){a=536870911&a+b
 a=536870911&a+((524287&a)<<10>>>0)
 return a^a>>>6},
 Up:function(a){a=536870911&a+((67108863&a)<<3>>>0)
@@ -3113,7 +3112,7 @@ IU:{
 R4:[function(a,b,c,d){var z,y
 if(b===!0){z=[c]
 C.Nm.FV(z,d)
-d=z}y=P.z(J.C0(d,P.Xl()),!0,null)
+d=z}y=P.z(J.kl(d,P.Xl()),!0,null)
 return P.wY(H.kx(a,y))},"$4","uu",8,0,null,17,18,19,20],
 Dm:function(a,b,c){var z
 if(Object.isExtensible(a)&&!Object.prototype.hasOwnProperty.call(a,b))try{Object.defineProperty(a,b,{value:c})
@@ -3217,7 +3216,7 @@ QS:{
 "^":"r:21;",
 $1:function(a){return new P.E4(a)}}}],["","",,P,{
 "^":"",
-Zm:function(a,b){a=536870911&a+b
+VC:function(a,b){a=536870911&a+b
 a=536870911&a+((524287&a)<<10>>>0)
 return a^a>>>6},
 xk:function(a){a=536870911&a+((67108863&a)<<3>>>0)
@@ -3393,9 +3392,13 @@ if(typeof print=="function"){print(a)
 return}throw"Unable to print message: "+String(a)}}],["","",,E,{
 "^":"",
 EF:function(){$.Tk().nW(new E.Wh(),new E.Ss(),new D.jA(1000))},
-e4:[function(a){J.Tf($.cM(),"document").KF("Success")
+e4:[function(a){var z,y
+z=document.body
+y=z.textContent
+if(y==null)return y.g()
+z.textContent=y+"Success"
 J.Tf(a,"root").V7("getFile",["DartCreatedFile.txt",P.jT(P.B(["create",!0,"exclusive",!1],null,null)),E.jy(),E.hY()])},"$1","Gf",2,0,24,25],
-jd:[function(a){var z
+jd:[function(a){var z,y,x,w
 switch(J.on(a)){case 10:z="QUOTA_EXCEEDED_ERR"
 break
 case 1:z="NOT_FOUND_ERR"
@@ -3406,9 +3409,22 @@ case 9:z="INVALID_MODIFICATION_ERR"
 break
 case 7:z="INVALID_STATE_ERR"
 break
-default:z="Unknown Error"}J.Tf($.cM(),"document").KF("Error: "+z)},"$1","hY",2,0,26,2],
-Bl:[function(a){J.Tf($.cM(),"document").KF(J.Tf(a,"fullPath"))},"$1","jy",2,0,24,27],
+default:z="Unknown Error"}y="Error: "+z
+x=document.body
+w=x.textContent
+if(w==null)return w.g()
+x.textContent=w+y},"$1","hY",2,0,26,2],
+Bl:[function(a){var z,y,x
+z=J.Tf(a,"fullPath")
+y=document.body
+x=y.textContent
+if(x==null)return x.g()
+y.textContent=J.WB(x,z)},"$1","jy",2,0,24,27],
 QL:[function(){var z,y,x,w
+z=document.body
+y=z.textContent
+if(y==null)return y.g()
+z.textContent=y+"App launched"
 z=$.U
 if(z==null)z=O.S()
 else{y=H.J(new P.L(0,$.X,null),[null])
@@ -3421,22 +3437,42 @@ if(y!==C.N)x=P.V(x,y)
 z.xf(new P.Fe(null,w,2,null,x))},"$0","Da",0,0,11],
 Wh:{
 "^":"r:46;",
-$1:function(a){J.Tf($.cM(),"document").KF("t:"+H.d(a.c)+", x:"+H.d(a.Q)+", y:"+H.d(a.a)+", z:"+H.d(a.b))}},
+$1:function(a){var z,y,x
+z="t:"+H.d(a.c)+", x:"+H.d(a.Q)+", y:"+H.d(a.a)+", z:"+H.d(a.b)
+y=document.body
+x=y.textContent
+if(x==null)return x.g()
+y.textContent=x+z}},
 Ss:{
 "^":"r:28;",
-$0:[function(){return J.Tf($.cM(),"document").KF("Fail to get acceleration.")},"$0",null,0,0,null,"call"]},
+$0:[function(){var z,y
+z=document.body
+y=z.textContent
+if(y==null)return y.g()
+z.textContent=y+"Fail to get acceleration."
+return},"$0",null,0,0,null,"call"]},
 Q:{
 "^":"r:48;",
-$1:[function(a){var z,y
+$1:[function(a){var z,y,x,w,v
 E.EF()
-z=$.cM()
+z=$.LX()
 y=J.Tf(z,"PERSISTENT")
-J.Tf(z,"document").KF(C.xB.g("Should be Constant PERSISTENT of LFS: ",J.Lz(y)))
+x=C.xB.g("Should be Constant PERSISTENT of LFS: ",J.Lz(y))
+w=document.body
+v=w.textContent
+if(v==null)return v.g()
+w.textContent=v+x
 z.V7("requestFileSystem",[y,0,E.Gf(),E.hY()])
 return},"$1",null,2,0,null,47,"call"]},
 O:{
 "^":"r:43;",
-$2:[function(a,b){return J.Tf($.cM(),"document").KF("Failed: "+H.d(a)+", "+H.d(b))},"$2",null,4,0,null,49,50,"call"]}},1],["","",,D,{
+$2:[function(a,b){var z,y,x
+z="Failed: "+H.d(a)+", "+H.d(b)
+y=document.body
+x=y.textContent
+if(x==null)return x.g()
+y.textContent=x+z
+return},"$2",null,4,0,null,49,50,"call"]}},1],["","",,D,{
 "^":"",
 td:{
 "^":"a;Q,a,b,c",
@@ -3447,7 +3483,7 @@ O9:{
 "^":"a;Q",
 nW:function(a,b,c){var z=P.jT(P.B(["frequency",c.Q],null,null))
 return this.Q.V7("watchAcceleration",[new D.Db(a),b,z])},
-t7:function(){var z=J.Tf(J.Tf($.cM(),"navigator"),"accelerometer")
+t7:function(){var z=J.Tf(J.Tf($.LX(),"navigator"),"accelerometer")
 this.Q=z
 if(z==null)throw H.b(P.s("Not ready yet."))}},
 Db:{
@@ -3459,7 +3495,7 @@ jA:{
 "^":"",
 Qa:{
 "^":"a;Q",
-zq:function(){var z=J.Tf($.cM(),"device")
+zq:function(){var z=J.Tf($.LX(),"device")
 this.Q=z
 if(z==null)throw H.b(P.s("Device not ready."))},
 $isQa:true,
@@ -3513,7 +3549,6 @@ if(a.constructor==Array)return J.G.prototype
 if(typeof a!="object")return a
 if(a instanceof P.a)return a
 return J.ks(a)}
-J.C0=function(a,b){return J.w1(a).ez(a,b)}
 J.DZ=function(a,b){return J.t(a).P(a,b)}
 J.KC=function(a){return J.RE(a).gyG(a)}
 J.Lz=function(a){return J.t(a).X(a)}
@@ -3529,6 +3564,7 @@ return J.Qc(a).g(a,b)}
 J.i4=function(a,b){return J.w1(a).Zv(a,b)}
 J.kE=function(a,b){return J.U6(a).tg(a,b)}
 J.kH=function(a,b){return J.w1(a).aN(a,b)}
+J.kl=function(a,b){return J.w1(a).ez(a,b)}
 J.mG=function(a,b){if(a==null)return b==null
 if(typeof a!="object")return b!=null&&a===b
 return J.t(a).m(a,b)}
@@ -3714,21 +3750,21 @@ $.PN=null
 $.U=null
 I.$lazy($,"thisScript","Kb","Rs",function(){return H.Td()})
 I.$lazy($,"workerIds","rS","p6",function(){return new P.kM(null)})
-I.$lazy($,"noSuchMethodPattern","lm","WD",function(){return H.LX(H.S7({toString:function(){return"$receiver$"}}))})
-I.$lazy($,"notClosurePattern","k1","OI",function(){return H.LX(H.S7({$method$:null,toString:function(){return"$receiver$"}}))})
-I.$lazy($,"nullCallPattern","Re","PH",function(){return H.LX(H.S7(null))})
-I.$lazy($,"nullLiteralCallPattern","fN","D1",function(){return H.LX(function(){var $argumentsExpr$='$arguments$'
+I.$lazy($,"noSuchMethodPattern","lm","WD",function(){return H.cM(H.S7({toString:function(){return"$receiver$"}}))})
+I.$lazy($,"notClosurePattern","k1","OI",function(){return H.cM(H.S7({$method$:null,toString:function(){return"$receiver$"}}))})
+I.$lazy($,"nullCallPattern","Re","PH",function(){return H.cM(H.S7(null))})
+I.$lazy($,"nullLiteralCallPattern","fN","D1",function(){return H.cM(function(){var $argumentsExpr$='$arguments$'
 try{null.$method$($argumentsExpr$)}catch(z){return z.message}}())})
-I.$lazy($,"undefinedCallPattern","qi","rx",function(){return H.LX(H.S7(void 0))})
-I.$lazy($,"undefinedLiteralCallPattern","rZ","Y9",function(){return H.LX(function(){var $argumentsExpr$='$arguments$'
+I.$lazy($,"undefinedCallPattern","qi","rx",function(){return H.cM(H.S7(void 0))})
+I.$lazy($,"undefinedLiteralCallPattern","rZ","Y9",function(){return H.cM(function(){var $argumentsExpr$='$arguments$'
 try{(void 0).$method$($argumentsExpr$)}catch(z){return z.message}}())})
-I.$lazy($,"nullPropertyPattern","BX","zO",function(){return H.LX(H.Mj(null))})
-I.$lazy($,"nullLiteralPropertyPattern","tt","Bi",function(){return H.LX(function(){try{null.$method$}catch(z){return z.message}}())})
-I.$lazy($,"undefinedPropertyPattern","dt","eA",function(){return H.LX(H.Mj(void 0))})
-I.$lazy($,"undefinedLiteralPropertyPattern","A7","ko",function(){return H.LX(function(){try{(void 0).$method$}catch(z){return z.message}}())})
+I.$lazy($,"nullPropertyPattern","BX","zO",function(){return H.cM(H.Mj(null))})
+I.$lazy($,"nullLiteralPropertyPattern","tt","Bi",function(){return H.cM(function(){try{null.$method$}catch(z){return z.message}}())})
+I.$lazy($,"undefinedPropertyPattern","dt","eA",function(){return H.cM(H.Mj(void 0))})
+I.$lazy($,"undefinedLiteralPropertyPattern","A7","ko",function(){return H.cM(function(){try{(void 0).$method$}catch(z){return z.message}}())})
 I.$lazy($,"scheduleImmediateClosure","M","oe",function(){return P.xg()})
 I.$lazy($,"_toStringVisiting","nM","Ex",function(){return[]})
-I.$lazy($,"context","eo","cM",function(){return P.ND(self)})
+I.$lazy($,"context","eo","LX",function(){return P.ND(self)})
 I.$lazy($,"_DART_OBJECT_PROPERTY_NAME","kt","Iq",function(){return H.Yg("_$dart_dartObject")})
 I.$lazy($,"_DART_CLOSURE_PROPERTY_NAME","Ri","Dp",function(){return H.Yg("_$dart_dartClosure")})
 I.$lazy($,"_dartProxyCtor","Je","hs",function(){return function DartObject(a){this.o=a}})

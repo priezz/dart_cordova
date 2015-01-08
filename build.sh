@@ -1,6 +1,9 @@
 #!/bin/sh
-pub build --output=assets
-mv assets/web assets/www
+# pub build --output=assets
+pub build
+# mv assets/web assets/www
+# rm
+# mv build/web www
 git add .
-git commit -m 'First commit'
+git commit -m $(date "+%Y-%m-%H %X")
 git push

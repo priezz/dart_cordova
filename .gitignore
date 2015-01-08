@@ -5,6 +5,7 @@ Icon?
 .idea
 npm-debug.log
 node_modules/*
+!assets/www/packages/
 packages
 build/
 web/assets/vendor/*

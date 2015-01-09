@@ -27,6 +27,7 @@
 
 	<gap:plugin name="org.apache.cordova.device" />
 	<gap:plugin name="org.apache.cordova.device-motion" />
+	<gap:plugin name="org.apache.cordova.console" />
 
 	<feature name="debug-server" required="false">
 	</feature>

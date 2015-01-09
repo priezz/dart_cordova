@@ -21,7 +21,7 @@
 	<gap:platform name="android" />
 	<!-- gap:platform name="winphone" /-->
 
-	<preference name="fullscreen" value="true" />
+	<preference name="fullscreen" value="false" />
 
 	<feature name="http://api.phonegap.com/1.0/device" />
 	<feature name="http://api.phonegap.com/1.0/file" />

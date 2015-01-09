@@ -20,6 +20,9 @@
 
 	<gap:platform name="android" />
 	<gap:platform name="ios" />
+	<gap:platform name="firefoxos" />
+	<gap:platform name="blackberry10" />
+	<gap:platform name="amazon-fireos" />
 	<!-- gap:platform name="winphone" /-->
 
 	<preference name="fullscreen" value="false" />

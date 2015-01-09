@@ -5256,7 +5256,6 @@ J.pP(z.gE()).FV(0,V.vn())
 $.xP().push(z)
 $.UQ().eb(z,!1,!1)
 return z},
-V7:[function(){},"$0","J6",0,0,13],
 QL:[function(){var z,y,x,w
 E.M("App launched")
 z=$.U
@@ -5279,7 +5278,6 @@ Q:{
 "^":"r:61;",
 $1:[function(a){E.M("Device READY: "+H.d(a.gk8()))
 E.EF()
-J.Tf(J.Tf($.LX(),"navigator"),"notification").V7("alert",["You are the winner!",E.J6(),"Game Over","Done"])
 return},"$1",null,2,0,null,60,"call"]},
 O:{
 "^":"r:53;",

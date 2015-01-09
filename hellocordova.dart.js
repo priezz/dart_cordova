@@ -5047,7 +5047,7 @@ throw H.b(P.TE(b,0,c-1,null,null))}else throw H.b(P.p("Invalid list index "+H.d(
 bv:function(a,b,c){if(b>>>0!==b||b>=c)this.aq(a,b,c)},
 $isET:true,
 $isAS:true,
-"%":";ArrayBufferView;b0|Ob|GV|Dg|fj|BU|DV"},
+"%":";ArrayBufferView;b0|Ob|BU|Dg|fj|nA|DV"},
 df:{
 "^":"ET;",
 $isAS:true,
@@ -5173,7 +5173,7 @@ a.set(d,b)},
 $isXj:true,
 $isDD:true},
 Dg:{
-"^":"GV;",
+"^":"BU;",
 p:function(a,b){var z=a.length
 if(b>>>0!==b||b>=z)this.aq(a,b,z)
 return a[b]},
@@ -5190,10 +5190,10 @@ $aszM:function(){return[P.CP]},
 $isqC:true,
 $iscX:true,
 $ascX:function(){return[P.CP]}},
-GV:{
+BU:{
 "^":"Ob+XB;"},
 DV:{
-"^":"BU;",
+"^":"nA;",
 q:function(a,b,c){var z=a.length
 if(b>>>0!==b||b>=z)this.aq(a,b,z)
 a[b]=c},
@@ -5212,7 +5212,7 @@ $aszM:function(){return[P.KN]},
 $isqC:true,
 $iscX:true,
 $ascX:function(){return[P.KN]}},
-BU:{
+nA:{
 "^":"fj+XB;"}}],["","",,H,{
 "^":"",
 qw:function(a){if(typeof dartPrint=="function"){dartPrint(a)
@@ -5221,13 +5221,6 @@ return}if(typeof window=="object")return
 if(typeof print=="function"){print(a)
 return}throw"Unable to print message: "+String(a)}}],["","",,E,{
 "^":"",
-EF:function(){var z=E.M("\n\n")
-$.VL().nW(new E.Wh(z),new E.Ss(),new D.jA(1000))},
-e4:[function(a){E.M("Success")
-J.Tf(a,"root").V7("getFile",["DartCreatedFile.txt",P.jT(P.B(["create",!0,"exclusive",!1],null,null)),E.o1(),E.Ry()])},"$1","Gf",2,0,35,36],
-bB:[function(a){var z=J.RE(a)
-switch(z.gcH(a)){}E.M("Error: "+H.d(z.gcH(a)))},"$1","Ry",2,0,14,3],
-Hb:[function(a){E.M(J.Tf(a,"fullPath"))},"$1","o1",2,0,35,37],
 M:function(a){var z,y,x,w,v,u,t,s,r,q
 z=new V.ta("",null,null,null,null,null,null,null,null,null,null,null,null,null,0,0,null,null,null,null,!1)
 z.yI(a)
@@ -5281,6 +5274,12 @@ J.pP(z.gE()).FV(0,V.vn())
 $.xP().push(z)
 $.UQ().eb(z,!1,!1)
 return z},
+EF:function(){var z=E.M("\n\n")
+$.VL().nW(new E.Wh(z),new E.Ss(),new D.jA(1000))},
+e4:[function(a){E.M("Success")
+J.Tf(a,"root").V7("getFile",["DartCreatedFile.txt",P.jT(P.B(["create",!0,"exclusive",!1],null,null)),E.o1(),E.Ry()])},"$1","Gf",2,0,35,36],
+bB:[function(a){switch(J.GV(a)){}E.M("Error: Unknown Error")},"$1","Ry",2,0,14,3],
+Hb:[function(a){E.M(J.Tf(a,"fullPath"))},"$1","o1",2,0,35,37],
 QL:[function(){var z,y,x,w
 E.M("App launched")
 z=$.U
@@ -5301,13 +5300,11 @@ Ss:{
 $0:[function(){return E.M("Fail to get acceleration.")},"$0",null,0,0,null,"call"]},
 Q:{
 "^":"r:64;",
-$1:[function(a){var z,y
+$1:[function(a){var z
 E.M("Device READY: "+H.d(a.gk8()))
 E.EF()
 z=$.LX()
-y=J.Tf(z,"PERSISTENT")
-E.M(C.xB.g("Should be Constant PERSISTENT of LFS: ",J.Lz(y)))
-z.V7("requestFileSystem",[y,0,E.Gf(),E.Ry()])
+z.V7("requestFileSystem",[J.Tf(z,"PERSISTENT"),0,E.Gf(),E.Ry()])
 return},"$1",null,2,0,null,63,"call"]},
 O:{
 "^":"r:56;",
@@ -7816,6 +7813,7 @@ J.FN=function(a){return J.U6(a).gl0(a)}
 J.G0=function(a){return J.RE(a).gK(a)}
 J.GJ=function(a,b,c,d){return J.RE(a).Y9(a,b,c,d)}
 J.GR=function(a,b,c){return J.RE(a).QT(a,b,c)}
+J.GV=function(a){return J.RE(a).gcH(a)}
 J.HC=function(a){return J.RE(a).gOp(a)}
 J.IP=function(a){return J.RE(a).gml(a)}
 J.In=function(a){return J.RE(a).gns(a)}

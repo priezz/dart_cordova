@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+	id				= "com.blueshift.dartcordova"
+	version			= "0.0.1"
+	xmlns			= "http://www.w3.org/ns/widgets"
+	xmlns:cdv		= "http://cordova.apache.org/ns/1.0"
+	xmlns:gap		= "http://phonegap.com/ns/1.0"
+	xmlns:android	= "http://schemas.android.com/apk/res/android"
+	>
+
+    <name>Dart Cordova test</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event called from Dart app.
+    </description>
+    <author email="a@priezz.net" href="https://github.com/priezz">
+        Alexandr Priezzhev
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+
+	<gap:platform name="android" />
+	<gap:platform name="winphone" />
+
+	<preference name="fullscreen" value="true" />
+
+	<feature name="http://api.phonegap.com/1.0/network" />
+	<feature name="http://api.phonegap.com/1.0/network" />
+	<feature name="http://api.phonegap.com/1.0/camera" />
+	<feature name="http://api.phonegap.com/1.0/notification" />
+	<feature name="http://api.phonegap.com/1.0/geolocation" />
+	<feature name="http://api.phonegap.com/1.0/media" />
+	<feature name="http://api.phonegap.com/1.0/contacts" />
+	<feature name="http://api.phonegap.com/1.0/file" />
+	<feature name="http://api.phonegap.com/1.0/battery" />
+	<feature name="http://api.phonegap.com/1.0/device" />
+
+</widget>

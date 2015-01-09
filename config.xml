@@ -29,7 +29,7 @@
 	<gap:plugin name="org.apache.cordova.device-motion" />
 
 	<feature name="debug-server" required="true">
-		<param name="domain" value="http://localhost:8080"/>
+		<param name="domain" value="http://192.168.70.171:8080"/>
 		<param name="key" value="com.blueshift.dartcordova.uniqueid1"/>
 	</feature>
 </widget>

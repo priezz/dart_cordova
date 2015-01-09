@@ -31,6 +31,8 @@
 
 	<!--gap:plugin name="org.apache.cordova.device" /-->
 	<gap:plugin name="org.apache.cordova.device-motion" />
-	<gap:plugin name="org.apache.cordova.console" />
+	<!--gap:plugin name="org.apache.cordova.console" /-->
+	<gap:plugin name="org.apache.cordova.dialogs"/>
+	<gap:plugin name="org.apache.cordova.file"/>
 
 </widget>

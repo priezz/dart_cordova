@@ -5275,6 +5275,7 @@ Ss:{
 $0:[function(){return E.KK("Fail to get acceleration.")},"$0",null,0,0,null,"call"]},
 ZG:{
 "^":"a;Q",
+gk8:function(){return J.Tf(this.Q,"model")},
 f3:function(){var z=J.Tf($.LX(),"device")
 this.Q=z
 if(z==null)throw H.b(P.s("Device not ready."))},
@@ -5325,7 +5326,7 @@ x=new H.V(r,null)
 this.Q.w0(y,x)}}},
 VW:{
 "^":"r:64;",
-$1:[function(a){E.KK("Device READY")
+$1:[function(a){E.KK("Device READY: "+H.d(a.gk8()))
 return},"$1",null,2,0,null,63,"call"]},
 oZ:{
 "^":"r:56;",

@@ -50,7 +50,7 @@
 	<gap:plugin name="com.pylonproducts.wifiwizard"/> <!-- http://plugins.cordova.io/#/package/com.pylonproducts.wifiwizard -->
 	<gap:plugin name="nl.nielsad.cordova.wifiscanner" source="plugins.cordova.io" /> <!-- http://plugins.cordova.io/#/package/nl.nielsad.cordova.wifiscanner -->
 	<gap:plugin name="com.connectivity.monitor" source="plugins.cordova.io" /> <!-- http://plugins.cordova.io/#/package/com.connectivity.monitor -->
-	<gap:plugin name="com.ccsoft.plugin.androidemail"/> <!-- http://plugins.cordova.io/#/package/com.ccsoft.plugin.androidemail -->
+	<gap:plugin name="com.ccsoft.plugin.androidemail" source="plugins.cordova.io" /> <!-- http://plugins.cordova.io/#/package/com.ccsoft.plugin.androidemail -->
 	<gap:plugin name="com.google.playservices"/>
 	<gap:plugin name="com.analytics.google"/> <!-- http://plugins.cordova.io/#/package/com.analytics.google -->
 	<gap:plugin name="com.analytics.adid.google"/> <!-- http://plugins.cordova.io/#/package/com.analytics.adid.google -->

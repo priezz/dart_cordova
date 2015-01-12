@@ -48,7 +48,7 @@
 	<gap:plugin name="org.apache.cordova.geolocation"/>
 	<!-- gap:plugin name="org.apache.cordova.network-information"/ --> <!-- https://github.com/apache/cordova-plugin-network-information/blob/df7aac845dc7deddbdb76e89216776a802ee8b67/doc/index.md -->
 	<gap:plugin name="com.pylonproducts.wifiwizard"/> <!-- http://plugins.cordova.io/#/package/com.pylonproducts.wifiwizard -->
-	<gap:plugin name="nl.nielsad.cordova.wifiscanner"/> <!-- http://plugins.cordova.io/#/package/nl.nielsad.cordova.wifiscanner -->
+	<gap:plugin name="nl.nielsad.cordova.wifiscanner" source="plugins.cordova.io"/> <!-- http://plugins.cordova.io/#/package/nl.nielsad.cordova.wifiscanner -->
 	<gap:plugin name="com.connectivity.monitor"/> <!-- http://plugins.cordova.io/#/package/com.connectivity.monitor -->
 	<gap:plugin name="com.ccsoft.plugin.androidemail"/> <!-- http://plugins.cordova.io/#/package/com.ccsoft.plugin.androidemail -->
 	<gap:plugin name="com.google.playservices"/>

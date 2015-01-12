@@ -4,10 +4,19 @@
   </div>
   <div ng-switch-when="true">
     <h3>Device Info</h3>
-
     <section id="details">
-	  <div>model: {{device.model}}</div>
-      <!-- <ng-view></ng-view> -->
+	  <div>platform: {{deviceInfo.platform}}</div>
+	  <div>model: {{deviceInfo.model}}</div>
+	  <div>version: {{deviceInfo.version}}</div>
+	  <div>uuid: {{deviceInfo.uuid}}</div>
     </section>
-  </div>
+	<br/>
+
+    <h3>Device Position</h3>
+    <section id="details">
+	  <!-- <div>X: {{accel.x}}</div> -->
+	  <!-- <div>Y: {{accel.y}}</div> -->
+	  <!-- <div>Z: {{accel.z}}</div> -->
+    </section>
+ </div>
 </div>

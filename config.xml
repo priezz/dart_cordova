@@ -23,7 +23,7 @@
 	<gap:platform name="android" />
 	<!-- gap:platform name="ios" / -->
 	<gap:platform name="ubuntu" />
-	<!-- gap:platform name="browser" / -->
+	<gap:platform name="browser" />
 	<gap:platform name="firefoxos" />
 	<gap:platform name="blackberry10" />
 	<gap:platform name="amazon-fireos" />
@@ -41,7 +41,7 @@
 
 	<!-- push - https://github.com/phonegap-build/PushPlugin/blob/1979d97/README.md -->
 	<gap:plugin name="org.apache.cordova.device" />
-	<!-- gap:plugin name="org.apache.cordova.device-motion" / -->
+	<!-- gap:plugin name="org.apache.cordova.device-motion" / --> <!-- http://plugins.cordova.io/#/package/org.apache.cordova.device-motion -->
 	<!-- gap:plugin name="org.apache.cordova.console" / -->
 	<gap:plugin name="org.apache.cordova.dialogs"/>
 	<gap:plugin name="org.apache.cordova.file"/>

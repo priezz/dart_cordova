@@ -5543,124 +5543,121 @@ $.xP().push(x)
 $.UQ().eb(x,!1,!1)}},"$1",null,2,0,null,63,"call"]},
 Rh:{
 "^":"r:65;",
-$1:[function(a){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k
-F.M("entered listAvailableNetworks/_listNetworks")
-for(z=J.Nx(a);z.D();){y=J.Tf(z.gk(),"SSID")
-x=new V.ta("",null,null,null,null,null,null,null,null,null,null,null,null,null,0,0,null,null,null,null,!1)
-w=y!=null
-if(w&&J.FN(y)!==!0){x.go=w?y:""
-x.cx=x.un()
-y=J.pP(x.gE())
-w=$.VH().Q
-y.h(0,w)
-y.h(0,w+x.gxr(x))
-J.pP(x.cx).Rz(0,"v-html")
-if(x.cx==null){x.cx=x.un()
-y=J.pP(x.gE())
-w=$.VH().Q
-y.h(0,w)
-y.h(0,w+x.gxr(x))}y=x.cx
-w=H.d(L.l6(x.go,!0,!1))
-J.Qy(y,w)}y=x.a
-if(y!=null)y.ZP(0,x)
-else if(x.fy)x.BZ()
+$1:[function(a){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k,j
+F.M("Networks found:\n")
+for(z=J.Nx(a);z.D();){y=z.gk()
+x=J.U6(y)
+x=H.d(x.p(y,"SSID"))+" ("+H.d(x.p(y,"BSSID"))+"): "+H.d(x.p(y,"level"))
+w=new V.ta("",null,null,null,null,null,null,null,null,null,null,null,null,null,0,0,null,null,null,null,!1)
+if(!C.xB.gl0(x)){w.go=x
+w.cx=w.un()
+x=J.pP(w.gE())
+v=$.VH().Q
+x.h(0,v)
+x.h(0,v+w.gxr(w))
+J.pP(w.cx).Rz(0,"v-html")
+if(w.cx==null){w.cx=w.un()
+x=J.pP(w.gE())
+v=$.VH().Q
+x.h(0,v)
+x.h(0,v+w.gxr(w))}x=w.cx
+v=H.d(L.l6(w.go,!0,!1))
+J.Qy(x,v)}x=w.a
+if(x!=null)x.ZP(0,w)
+else if(w.fy)w.BZ()
 if(!$.yR){$.yR=!0
-y=window
-w=new W.RO(y,"resize",!1)
-w.$builtinTypeInfo=[null]
-y=new W.xC(0,y,"resize",W.VF(V.iF()),!1)
-y.$builtinTypeInfo=[H.Kp(w,0)]
-w=y.c
-if(w!=null&&y.Q<=0)J.qV(y.a,"resize",w,!1)
-if($.AM().ch){y=new W.RO(document,"touchstart",!1)
-y.$builtinTypeInfo=[null]}else{y=new W.RO(document,"mousedown",!1)
-y.$builtinTypeInfo=[null]}w=y.a
-v=y.b
-u=new W.xC(0,y.Q,w,W.VF($.ul()),v)
-u.$builtinTypeInfo=[H.Kp(y,0)]
-y=u.c
-if(y!=null&&u.Q<=0)J.qV(u.a,w,y,v)}t=document.querySelector("#v-main")
-y=t==null
-if(y)t=document.body
-switch(null){case"before":s=t.parentElement
-r=t
+x=window
+v=new W.RO(x,"resize",!1)
+v.$builtinTypeInfo=[null]
+x=new W.xC(0,x,"resize",W.VF(V.iF()),!1)
+x.$builtinTypeInfo=[H.Kp(v,0)]
+v=x.c
+if(v!=null&&x.Q<=0)J.qV(x.a,"resize",v,!1)
+if($.AM().ch){x=new W.RO(document,"touchstart",!1)
+x.$builtinTypeInfo=[null]}else{x=new W.RO(document,"mousedown",!1)
+x.$builtinTypeInfo=[null]}v=x.a
+u=x.b
+t=new W.xC(0,x.Q,v,W.VF($.ul()),u)
+t.$builtinTypeInfo=[H.Kp(x,0)]
+x=t.c
+if(x!=null&&t.Q<=0)J.qV(t.a,v,x,u)}s=document.querySelector("#v-main")
+x=s==null
+if(x)s=document.body
+switch(null){case"before":r=s.parentElement
+q=s
 break
-case"replace":q=!!J.t(t).$iscv?t.id:""
-if(q.length!==0){if(x.cx==null){x.cx=x.un()
-y=J.pP(x.gE())
-w=$.VH().Q
-y.h(0,w)
-y.h(0,w+x.gxr(x))}y=J.FN(J.F8(x.cx))===!0}else y=!1
-if(y)x.sjO(0,q)
-s=t.parentElement
-r=t.nextSibling
-y=t.parentNode
-if(y!=null)y.removeChild(t)
+case"replace":p=!!J.t(s).$iscv?s.id:""
+if(p.length!==0){if(w.cx==null){w.cx=w.un()
+x=J.pP(w.gE())
+v=$.VH().Q
+x.h(0,v)
+x.h(0,v+w.gxr(w))}x=J.FN(J.F8(w.cx))===!0}else x=!1
+if(x)w.sjO(0,p)
+r=s.parentElement
+q=s.nextSibling
+x=s.parentNode
+if(x!=null)x.removeChild(s)
 break
-case"inner":J.kz(t)
-s=t
-r=null
+case"inner":J.kz(s)
+r=s
+q=null
 break
-case"dialog":y=$.kC()
-w=document.body
-if(t==null?w==null:t===w)p=new L.tx(window.innerWidth,window.innerHeight)
-else{w=J.RE(t)
-p=new L.tx(w.gz3(t),w.gIt(t))}o=document.createElement("div",null)
-J.eC(o.style,"relative")
-t.appendChild(o)
-n=W.U9("<div class=\"v- v-mask\" style=\"width:"+H.d(p.Q)+"px;height:"+H.d(p.a)+"px\"></div>",null,null)
-if(t!==document.body)J.eC(J.EJ(n),"absolute")
-w=J.RE(n)
-v=w.gO(n)
-u=x.ch
-if(u==null){u=new V.LG(x)
-x.ch=u}u=u.Q
-if(u.cx==null){u.cx=u.un()
-m=J.pP(u.gE())
-l=$.VH().Q
-m.h(0,l)
-m.h(0,l+u.gxr(u))}J.yy(v,J.xt(J.EJ(u.cx)))
-if(x.cx==null){x.cx=x.un()
-v=J.pP(x.gE())
+case"dialog":x=$.kC()
+v=document.body
+if(s==null?v==null:s===v)o=new L.tx(window.innerWidth,window.innerHeight)
+else{v=J.RE(s)
+o=new L.tx(v.gz3(s),v.gIt(s))}n=document.createElement("div",null)
+J.eC(n.style,"relative")
+s.appendChild(n)
+m=W.U9("<div class=\"v- v-mask\" style=\"width:"+H.d(o.Q)+"px;height:"+H.d(o.a)+"px\"></div>",null,null)
+if(s!==document.body)J.eC(J.EJ(m),"absolute")
+v=J.RE(m)
+u=v.gO(m)
+t=w.ch
+if(t==null){t=new V.LG(w)
+w.ch=t}t=t.Q
+if(t.cx==null){t.cx=t.un()
+l=J.pP(t.gE())
+k=$.VH().Q
+l.h(0,k)
+l.h(0,k+t.gxr(t))}J.yy(u,J.xt(J.EJ(t.cx)))
+if(w.cx==null){w.cx=w.un()
+u=J.pP(w.gE())
+t=$.VH().Q
+u.h(0,t)
+u.h(0,t+w.gxr(w))}if(J.mG(J.it(J.EJ(w.cx)),"none"))J.EH(v.gO(m),"none")
+n.appendChild(m)
+x.q(0,w,new N.aA(n,m))
+$.AP().q(0,n,w)
+x=w.fr
+if(x==null){x=new V.zD(w,null,P.Py(null,null,null,null,null))
+w.fr=x}j=x.Q.p(0,"location")
+if(J.FN(j!=null?j:"")===!0){x=w.fr
+if(x==null){x=new V.zD(w,null,P.Py(null,null,null,null,null))
+w.fr=x}x.toString
+if(C.xB.gl0("center center"))x.Q.Rz(0,"location")
+else x.Q.q(0,"location",C.xB.DY("center center"))}r=n
+q=null
+break
+default:r=s
+q=null
+break}if(q!=null){x=q.parentElement
+if(w.cx==null){w.cx=w.un()
+v=J.pP(w.gE())
 u=$.VH().Q
 v.h(0,u)
-v.h(0,u+x.gxr(x))}if(J.mG(J.it(J.EJ(x.cx)),"none"))J.EH(w.gO(n),"none")
-o.appendChild(n)
-y.q(0,x,new N.aA(o,n))
-$.AP().q(0,o,x)
-y=x.fr
-if(y==null){y=new V.zD(x,null,P.Py(null,null,null,null,null))
-x.fr=y}k=y.Q.p(0,"location")
-if(J.FN(k!=null?k:"")===!0){y=x.fr
-if(y==null){y=new V.zD(x,null,P.Py(null,null,null,null,null))
-x.fr=y}y.toString
-if(C.xB.gl0("center center"))y.Q.Rz(0,"location")
-else y.Q.q(0,"location",C.xB.DY("center center"))}s=o
-r=null
-break
-default:s=t
-r=null
-break}if(r!=null){y=r.parentElement
-if(x.cx==null){x.cx=x.un()
-w=J.pP(x.gE())
+v.h(0,u+w.gxr(w))}x.insertBefore(w.cx,q)}else if(r!=null){if(w.cx==null){w.cx=w.un()
+x=J.pP(w.gE())
 v=$.VH().Q
-w.h(0,v)
-w.h(0,v+x.gxr(x))}y.insertBefore(x.cx,r)}else if(s!=null){if(x.cx==null){x.cx=x.un()
-y=J.pP(x.gE())
-w=$.VH().Q
-y.h(0,w)
-y.h(0,w+x.gxr(x))}s.appendChild(x.cx)}x.CU()
-if(x.cx==null){x.cx=x.un()
-y=J.pP(x.gE())
-w=$.VH().Q
-y.h(0,w)
-y.h(0,w+x.gxr(x))}J.pP(x.cx).FV(0,V.vn())
-$.xP().push(x)
-$.UQ().eb(x,!1,!1)}},"$1",null,2,0,null,63,"call"]},
-kf:{
-"^":"r:13;Q",
-$0:function(){F.M("processing results...")
-J.Tf($.LX(),"WifiWizard").V7("getScanResults",[this.Q,F.lC()])}},
+x.h(0,v)
+x.h(0,v+w.gxr(w))}r.appendChild(w.cx)}w.CU()
+if(w.cx==null){w.cx=w.un()
+x=J.pP(w.gE())
+v=$.VH().Q
+x.h(0,v)
+x.h(0,v+w.gxr(w))}J.pP(w.cx).FV(0,V.vn())
+$.xP().push(w)
+$.UQ().eb(w,!1,!1)}},"$1",null,2,0,null,63,"call"]},
 Q:{
 "^":"r:67;",
 $1:[function(a){var z

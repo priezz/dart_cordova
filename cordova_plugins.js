@@ -13,39 +13,6 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/org.apache.cordova.device-motion/www/Acceleration.js",
-        "id": "org.apache.cordova.device-motion.Acceleration",
-        "clobbers": [
-            "Acceleration"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.device-motion/www/accelerometer.js",
-        "id": "org.apache.cordova.device-motion.accelerometer",
-        "clobbers": [
-            "navigator.accelerometer"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.device-motion/src/browser/AccelerometerProxy.js",
-        "id": "org.apache.cordova.device-motion.AccelerometerProxy",
-        "runs": true
-    },
-    {
-        "file": "plugins/org.apache.cordova.device-motion/src/browser/accelerometer.js",
-        "id": "org.apache.cordova.device-motion.accelerometer",
-        "merges": [
-            "navigator.accelerometer"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
-        "id": "org.apache.cordova.dialogs.notification",
-        "merges": [
-            "navigator.notification"
-        ]
-    },
-    {
         "file": "plugins/org.apache.cordova.file/www/DirectoryEntry.js",
         "id": "org.apache.cordova.file.DirectoryEntry",
         "clobbers": [
@@ -170,17 +137,84 @@ module.exports = [
         "merges": [
             "window"
         ]
+    },
+    {
+        "file": "plugins/com.pylonproducts.wifiwizard/www/WifiWizard.js",
+        "id": "com.pylonproducts.wifiwizard.DynamicUpdate",
+        "clobbers": [
+            "WifiWizard"
+        ]
+    },
+    {
+        "file": "plugins/com.connectivity.monitor/www/connectivity.js",
+        "id": "com.connectivity.monitor.connectivity",
+        "clobbers": [
+            "window.connectivity"
+        ]
+    },
+    {
+        "file": "plugins/nl.nielsad.cordova.wifiscanner/www/AccessPoint.js",
+        "id": "nl.nielsad.cordova.wifiscanner.AccessPoint",
+        "clobbers": [
+            "AccessPoint"
+        ]
+    },
+    {
+        "file": "plugins/nl.nielsad.cordova.wifiscanner/www/WifiScanner.js",
+        "id": "nl.nielsad.cordova.wifiscanner.wifi",
+        "clobbers": [
+            "navigator.wifi"
+        ]
+    },
+    {
+        "file": "plugins/com.ccsoft.plugin.AndroidEmail/www/AndroidEmail.js",
+        "id": "com.ccsoft.plugin.AndroidEmail.AndroidEmail",
+        "merges": [
+            "CC"
+        ]
+    },
+    {
+        "file": "plugins/com.analytics.google/www/analytics.js",
+        "id": "com.analytics.google.GAPlugin",
+        "merges": [
+            "analytics"
+        ]
+    },
+    {
+        "file": "plugins/com.analytics.adid.google/www/analytics.js",
+        "id": "com.analytics.adid.google.GAPluginAdId",
+        "merges": [
+            "analytics"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.dialogs/www/notification.js",
+        "id": "org.apache.cordova.dialogs.notification",
+        "merges": [
+            "navigator.notification"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.dialogs/www/browser/notification.js",
+        "id": "org.apache.cordova.dialogs.notification_browser",
+        "merges": [
+            "navigator.notification"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "org.apache.cordova.console": "0.2.12",
     "org.apache.cordova.device": "0.2.13",
-    "org.apache.cordova.device-motion": "0.2.11",
     "org.apache.cordova.geolocation": "0.3.11",
-    "org.apache.cordova.dialogs": "0.2.11",
-    "org.apache.cordova.file": "1.3.2"
+    "org.apache.cordova.file": "1.3.2",
+    "com.pylonproducts.wifiwizard": "0.2.7",
+    "com.connectivity.monitor": "1.0.2",
+    "nl.nielsad.cordova.wifiscanner": "0.0.1",
+    "com.ccsoft.plugin.AndroidEmail": "0.1.0",
+    "com.analytics.google": "1.0.9",
+    "com.analytics.adid.google": "1.0.9",
+    "org.apache.cordova.dialogs": "0.2.12-dev"
 }
 // BOTTOM OF METADATA
 });

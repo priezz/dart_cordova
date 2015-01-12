@@ -37,10 +37,23 @@
 	<feature name="http://api.phonegap.com/1.0/notification" />
 	<feature name="http://api.phonegap.com/1.0/geolocation" />
 
+	<!-- http://plugins.cordova.io -->
+
+	<!-- push - https://github.com/phonegap-build/PushPlugin/blob/1979d97/README.md -->
 	<gap:plugin name="org.apache.cordova.device" />
-	<gap:plugin name="org.apache.cordova.device-motion" />
-	<gap:plugin name="org.apache.cordova.console" />
+	<!-- gap:plugin name="org.apache.cordova.device-motion" / -->
+	<!-- gap:plugin name="org.apache.cordova.console" / -->
 	<gap:plugin name="org.apache.cordova.dialogs"/>
 	<gap:plugin name="org.apache.cordova.file"/>
+	<gap:plugin name="org.apache.cordova.geolocation"/>
+	<!-- gap:plugin name="org.apache.cordova.network-information"/ --> <!-- https://github.com/apache/cordova-plugin-network-information/blob/df7aac845dc7deddbdb76e89216776a802ee8b67/doc/index.md -->
+	<gap:plugin name="com.pylonproducts.wifiwizard"/> <!-- http://plugins.cordova.io/#/package/com.pylonproducts.wifiwizard -->
+	<gap:plugin name="nl.nielsad.cordova.wifiscanner"/> <!-- http://plugins.cordova.io/#/package/nl.nielsad.cordova.wifiscanner -->
+	<gap:plugin name="com.connectivity.monitor"/> <!-- http://plugins.cordova.io/#/package/com.connectivity.monitor -->
+	<gap:plugin name="com.ccsoft.plugin.androidemail"/> <!-- http://plugins.cordova.io/#/package/com.ccsoft.plugin.androidemail -->
+	<gap:plugin name="com.google.playservices"/>
+	<gap:plugin name="com.analytics.google"/> <!-- http://plugins.cordova.io/#/package/com.analytics.google -->
+	<gap:plugin name="com.analytics.adid.google"/> <!-- http://plugins.cordova.io/#/package/com.analytics.adid.google -->
+	<gap:plugin name="org.apache.cordova.dialogs"/> <!-- https://github.com/apache/cordova-plugin-dialogs/blob/master/doc/index.md -->
 
 </widget>

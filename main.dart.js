@@ -5411,7 +5411,8 @@ Ty:[function(a){F.M(C.xB.g("Error: ",typeof a==="string"?a:"Unknown Error"))},"$
 Hb:[function(a){F.M(J.Tf(a,"fullPath"))},"$1","o1",2,0,35,37],
 V7:[function(){F.M("alert")},"$0","J6",0,0,13],
 Uv:function(){J.Tf($.LX(),"WifiWizard").V7("listNetworks",[new F.rw(),F.lC()])},
-fk:function(){J.Tf($.LX(),"WifiWizard").V7("startScan",[new F.kf(new F.Rh())])},
+fk:function(){F.M("scanning available networks...")
+J.Tf($.LX(),"WifiWizard").V7("startScan",[new F.kf(new F.Rh()),F.lC()])},
 QL:[function(){var z,y,x,w
 F.M("App launched")
 z=$.U
@@ -5658,7 +5659,7 @@ $.xP().push(x)
 $.UQ().eb(x,!1,!1)}},"$1",null,2,0,null,63,"call"]},
 kf:{
 "^":"r:13;Q",
-$0:[function(){F.M("scanning available networks...")
+$0:[function(){F.M("processing results...")
 J.Tf($.LX(),"WifiWizard").V7("getScanResults",[this.Q,F.lC()])},"$0",null,0,0,null,"call"]},
 Q:{
 "^":"r:66;",

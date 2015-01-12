@@ -21,7 +21,7 @@
 	<icon src="icon.png" />
 
 	<gap:platform name="android" />
-	<gap:platform name="ios" />
+	<!-- gap:platform name="ios" / -->
 	<gap:platform name="ubuntu" />
 	<gap:platform name="browser" />
 	<gap:platform name="firefoxos" />

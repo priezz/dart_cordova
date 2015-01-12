@@ -5427,7 +5427,7 @@ z.xf(new P.Fe(null,w,2,null,x))},"$0","Da",0,0,13],
 rw:{
 "^":"r:64;",
 $1:[function(a){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k,j
-F.M("entered _listNetworks")
+F.M("entered listConfiguredNetworks/_listNetworks")
 for(z=J.Nx(a);z.D();){y=z.gk()
 x=new V.ta("",null,null,null,null,null,null,null,null,null,null,null,null,null,0,0,null,null,null,null,!1)
 w=y!=null
@@ -5543,7 +5543,7 @@ $.UQ().eb(x,!1,!1)}},"$1",null,2,0,null,63,"call"]},
 Rh:{
 "^":"r:64;",
 $1:[function(a){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k,j
-F.M("entered _listNetworks")
+F.M("entered listAvailableNetworks/_listNetworks")
 for(z=J.Nx(a);z.D();){y=z.gk()
 x=new V.ta("",null,null,null,null,null,null,null,null,null,null,null,null,null,0,0,null,null,null,null,!1)
 w=y!=null

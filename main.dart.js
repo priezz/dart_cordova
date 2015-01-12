@@ -5412,7 +5412,7 @@ Hb:[function(a){F.M(J.Tf(a,"fullPath"))},"$1","o1",2,0,35,37],
 V7:[function(){F.M("alert")},"$0","J6",0,0,13],
 Uv:function(){J.Tf($.LX(),"WifiWizard").V7("listNetworks",[new F.rw(),F.lC()])},
 fk:function(){F.M("scanning available networks...")
-J.Tf($.LX(),"WifiWizard").V7("startScan",[new F.kf(new F.Rh()),F.lC()])},
+J.Tf(J.Tf($.LX(),"navigator"),"wifi").V7("getAccessPoints",[new F.Rh(),F.lC()])},
 QL:[function(){var z,y,x,w
 F.M("App launched")
 z=$.U
@@ -5542,127 +5542,127 @@ w.h(0,v+x.gxr(x))}J.pP(x.cx).FV(0,V.vn())
 $.xP().push(x)
 $.UQ().eb(x,!1,!1)}},"$1",null,2,0,null,63,"call"]},
 Rh:{
-"^":"r:64;",
-$1:[function(a){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k,j
+"^":"r:65;",
+$1:[function(a){var z,y,x,w,v,u,t,s,r,q,p,o,n,m,l,k
 F.M("entered listAvailableNetworks/_listNetworks")
-for(z=J.Nx(a);z.D();){y=z.gk()
+for(z=J.Nx(a);z.D();){y=J.Tf(z.gk(),"SSID")
 x=new V.ta("",null,null,null,null,null,null,null,null,null,null,null,null,null,0,0,null,null,null,null,!1)
 w=y!=null
 if(w&&J.FN(y)!==!0){x.go=w?y:""
 x.cx=x.un()
-w=J.pP(x.gE())
-v=$.VH().Q
-w.h(0,v)
-w.h(0,v+x.gxr(x))
+y=J.pP(x.gE())
+w=$.VH().Q
+y.h(0,w)
+y.h(0,w+x.gxr(x))
 J.pP(x.cx).Rz(0,"v-html")
 if(x.cx==null){x.cx=x.un()
-w=J.pP(x.gE())
-v=$.VH().Q
-w.h(0,v)
-w.h(0,v+x.gxr(x))}w=x.cx
-v=H.d(L.l6(x.go,!0,!1))
-J.Qy(w,v)}w=x.a
-if(w!=null)w.ZP(0,x)
+y=J.pP(x.gE())
+w=$.VH().Q
+y.h(0,w)
+y.h(0,w+x.gxr(x))}y=x.cx
+w=H.d(L.l6(x.go,!0,!1))
+J.Qy(y,w)}y=x.a
+if(y!=null)y.ZP(0,x)
 else if(x.fy)x.BZ()
 if(!$.yR){$.yR=!0
-w=window
-v=new W.RO(w,"resize",!1)
-v.$builtinTypeInfo=[null]
-w=new W.xC(0,w,"resize",W.VF(V.iF()),!1)
-w.$builtinTypeInfo=[H.Kp(v,0)]
-v=w.c
-if(v!=null&&w.Q<=0)J.qV(w.a,"resize",v,!1)
-if($.AM().ch){w=new W.RO(document,"touchstart",!1)
-w.$builtinTypeInfo=[null]}else{w=new W.RO(document,"mousedown",!1)
-w.$builtinTypeInfo=[null]}v=w.a
-u=w.b
-t=new W.xC(0,w.Q,v,W.VF($.ul()),u)
-t.$builtinTypeInfo=[H.Kp(w,0)]
-w=t.c
-if(w!=null&&t.Q<=0)J.qV(t.a,v,w,u)}s=document.querySelector("#v-main")
-w=s==null
-if(w)s=document.body
-switch(null){case"before":r=s.parentElement
-q=s
+y=window
+w=new W.RO(y,"resize",!1)
+w.$builtinTypeInfo=[null]
+y=new W.xC(0,y,"resize",W.VF(V.iF()),!1)
+y.$builtinTypeInfo=[H.Kp(w,0)]
+w=y.c
+if(w!=null&&y.Q<=0)J.qV(y.a,"resize",w,!1)
+if($.AM().ch){y=new W.RO(document,"touchstart",!1)
+y.$builtinTypeInfo=[null]}else{y=new W.RO(document,"mousedown",!1)
+y.$builtinTypeInfo=[null]}w=y.a
+v=y.b
+u=new W.xC(0,y.Q,w,W.VF($.ul()),v)
+u.$builtinTypeInfo=[H.Kp(y,0)]
+y=u.c
+if(y!=null&&u.Q<=0)J.qV(u.a,w,y,v)}t=document.querySelector("#v-main")
+y=t==null
+if(y)t=document.body
+switch(null){case"before":s=t.parentElement
+r=t
 break
-case"replace":p=!!J.t(s).$iscv?s.id:""
-if(p.length!==0){if(x.cx==null){x.cx=x.un()
-w=J.pP(x.gE())
-v=$.VH().Q
-w.h(0,v)
-w.h(0,v+x.gxr(x))}w=J.FN(J.F8(x.cx))===!0}else w=!1
-if(w)x.sjO(0,p)
-r=s.parentElement
-q=s.nextSibling
-w=s.parentNode
-if(w!=null)w.removeChild(s)
+case"replace":q=!!J.t(t).$iscv?t.id:""
+if(q.length!==0){if(x.cx==null){x.cx=x.un()
+y=J.pP(x.gE())
+w=$.VH().Q
+y.h(0,w)
+y.h(0,w+x.gxr(x))}y=J.FN(J.F8(x.cx))===!0}else y=!1
+if(y)x.sjO(0,q)
+s=t.parentElement
+r=t.nextSibling
+y=t.parentNode
+if(y!=null)y.removeChild(t)
 break
-case"inner":J.kz(s)
-r=s
-q=null
+case"inner":J.kz(t)
+s=t
+r=null
 break
-case"dialog":w=$.kC()
-v=document.body
-if(s==null?v==null:s===v)o=new L.tx(window.innerWidth,window.innerHeight)
-else{v=J.RE(s)
-o=new L.tx(v.gz3(s),v.gIt(s))}n=document.createElement("div",null)
-J.eC(n.style,"relative")
-s.appendChild(n)
-m=W.U9("<div class=\"v- v-mask\" style=\"width:"+H.d(o.Q)+"px;height:"+H.d(o.a)+"px\"></div>",null,null)
-if(s!==document.body)J.eC(J.EJ(m),"absolute")
-v=J.RE(m)
-u=v.gO(m)
-t=x.ch
-if(t==null){t=new V.LG(x)
-x.ch=t}t=t.Q
-if(t.cx==null){t.cx=t.un()
-l=J.pP(t.gE())
-k=$.VH().Q
-l.h(0,k)
-l.h(0,k+t.gxr(t))}J.yy(u,J.xt(J.EJ(t.cx)))
-if(x.cx==null){x.cx=x.un()
-u=J.pP(x.gE())
-t=$.VH().Q
-u.h(0,t)
-u.h(0,t+x.gxr(x))}if(J.mG(J.it(J.EJ(x.cx)),"none"))J.EH(v.gO(m),"none")
-n.appendChild(m)
-w.q(0,x,new N.aA(n,m))
-$.AP().q(0,n,x)
-w=x.fr
-if(w==null){w=new V.zD(x,null,P.Py(null,null,null,null,null))
-x.fr=w}j=w.Q.p(0,"location")
-if(J.FN(j!=null?j:"")===!0){w=x.fr
-if(w==null){w=new V.zD(x,null,P.Py(null,null,null,null,null))
-x.fr=w}w.toString
-if(C.xB.gl0("center center"))w.Q.Rz(0,"location")
-else w.Q.q(0,"location",C.xB.DY("center center"))}r=n
-q=null
-break
-default:r=s
-q=null
-break}if(q!=null){w=q.parentElement
+case"dialog":y=$.kC()
+w=document.body
+if(t==null?w==null:t===w)p=new L.tx(window.innerWidth,window.innerHeight)
+else{w=J.RE(t)
+p=new L.tx(w.gz3(t),w.gIt(t))}o=document.createElement("div",null)
+J.eC(o.style,"relative")
+t.appendChild(o)
+n=W.U9("<div class=\"v- v-mask\" style=\"width:"+H.d(p.Q)+"px;height:"+H.d(p.a)+"px\"></div>",null,null)
+if(t!==document.body)J.eC(J.EJ(n),"absolute")
+w=J.RE(n)
+v=w.gO(n)
+u=x.ch
+if(u==null){u=new V.LG(x)
+x.ch=u}u=u.Q
+if(u.cx==null){u.cx=u.un()
+m=J.pP(u.gE())
+l=$.VH().Q
+m.h(0,l)
+m.h(0,l+u.gxr(u))}J.yy(v,J.xt(J.EJ(u.cx)))
 if(x.cx==null){x.cx=x.un()
 v=J.pP(x.gE())
 u=$.VH().Q
 v.h(0,u)
-v.h(0,u+x.gxr(x))}w.insertBefore(x.cx,q)}else if(r!=null){if(x.cx==null){x.cx=x.un()
-w=J.pP(x.gE())
-v=$.VH().Q
-w.h(0,v)
-w.h(0,v+x.gxr(x))}r.appendChild(x.cx)}x.CU()
+v.h(0,u+x.gxr(x))}if(J.mG(J.it(J.EJ(x.cx)),"none"))J.EH(w.gO(n),"none")
+o.appendChild(n)
+y.q(0,x,new N.aA(o,n))
+$.AP().q(0,o,x)
+y=x.fr
+if(y==null){y=new V.zD(x,null,P.Py(null,null,null,null,null))
+x.fr=y}k=y.Q.p(0,"location")
+if(J.FN(k!=null?k:"")===!0){y=x.fr
+if(y==null){y=new V.zD(x,null,P.Py(null,null,null,null,null))
+x.fr=y}y.toString
+if(C.xB.gl0("center center"))y.Q.Rz(0,"location")
+else y.Q.q(0,"location",C.xB.DY("center center"))}s=o
+r=null
+break
+default:s=t
+r=null
+break}if(r!=null){y=r.parentElement
 if(x.cx==null){x.cx=x.un()
 w=J.pP(x.gE())
 v=$.VH().Q
 w.h(0,v)
-w.h(0,v+x.gxr(x))}J.pP(x.cx).FV(0,V.vn())
+w.h(0,v+x.gxr(x))}y.insertBefore(x.cx,r)}else if(s!=null){if(x.cx==null){x.cx=x.un()
+y=J.pP(x.gE())
+w=$.VH().Q
+y.h(0,w)
+y.h(0,w+x.gxr(x))}s.appendChild(x.cx)}x.CU()
+if(x.cx==null){x.cx=x.un()
+y=J.pP(x.gE())
+w=$.VH().Q
+y.h(0,w)
+y.h(0,w+x.gxr(x))}J.pP(x.cx).FV(0,V.vn())
 $.xP().push(x)
 $.UQ().eb(x,!1,!1)}},"$1",null,2,0,null,63,"call"]},
 kf:{
 "^":"r:13;Q",
-$0:[function(){F.M("processing results...")
-J.Tf($.LX(),"WifiWizard").V7("getScanResults",[this.Q,F.lC()])},"$0",null,0,0,null,"call"]},
+$0:function(){F.M("processing results...")
+J.Tf($.LX(),"WifiWizard").V7("getScanResults",[this.Q,F.lC()])}},
 Q:{
-"^":"r:66;",
+"^":"r:67;",
 $1:[function(a){var z
 F.M("Device READY: "+H.d(a.gk8()))
 z=$.LX()
@@ -5670,10 +5670,10 @@ J.Tf(J.Tf(z,"navigator"),"notification").V7("alert",["You are the winner!",F.J6(
 F.Uv()
 F.fk()
 z.V7("requestFileSystem",[J.Tf(z,"PERSISTENT"),0,F.Gf(),F.lC()])
-return},"$1",null,2,0,null,65,"call"]},
+return},"$1",null,2,0,null,66,"call"]},
 O:{
 "^":"r:56;",
-$2:[function(a,b){return F.M("Failed: "+H.d(a)+", "+H.d(b))},"$2",null,4,0,null,67,68,"call"]}},1],["","",,F,{
+$2:[function(a,b){return F.M("Failed: "+H.d(a)+", "+H.d(b))},"$2",null,4,0,null,68,69,"call"]}},1],["","",,F,{
 "^":"",
 Ue:function(a,b){var z,y,x
 try{z=J.pB(a,b)
@@ -5714,7 +5714,7 @@ this.e=!0}else{this.Q="unknown"
 this.a=1}this.cx=$.ov().a.test(H.Yx(y))},
 mE:function(){this.Ta()}},
 nh:{
-"^":"r:69;Q,a",
+"^":"r:70;Q,a",
 $1:function(a){var z,y,x,w
 z=a.ej(this.a)
 if(z!=null){y=this.Q
@@ -6059,14 +6059,14 @@ y=J.Lp(this.a)
 x=J.RE(z)
 return(z==null?y==null:z===y)?x.gIt(z):x.gJZ(z)}},
 Ra:{
-"^":"r:70;",
+"^":"r:71;",
 $3:function(a,b,c){var z=J.RE(c)
 z.sBb(c,J.D5(a,z.gmd(c)))}},
 wJY:{
-"^":"r:70;",
+"^":"r:71;",
 $3:function(a,b,c){J.Om(c,a)}},
 zOQ:{
-"^":"r:70;",
+"^":"r:71;",
 $3:function(a,b,c){var z,y,x
 z=J.RE(c)
 y=z.geT(c)
@@ -6074,28 +6074,28 @@ x=J.RE(b)
 y=(b==null?y==null:b===y)?x.gz3(b):x.gmd(b)
 z.sBb(c,J.WB(a,J.xH(J.D5(y,z.gmd(c)),2)))}},
 W6o:{
-"^":"r:70;",
+"^":"r:71;",
 $3:function(a,b,c){var z,y,x
 z=J.RE(c)
 y=z.geT(c)
 x=J.RE(b)
 z.sBb(c,J.D5(J.WB(a,(b==null?y==null:b===y)?x.gz3(b):x.gmd(b)),z.gmd(c)))}},
 MdQ:{
-"^":"r:70;",
+"^":"r:71;",
 $3:function(a,b,c){var z,y,x
 z=J.RE(c)
 y=z.geT(c)
 x=J.RE(b)
 z.sBb(c,J.WB(a,(b==null?y==null:b===y)?x.gz3(b):x.gmd(b)))}},
 wJ:{
-"^":"r:70;",
+"^":"r:71;",
 $3:function(a,b,c){var z=J.RE(c)
 z.sG6(c,J.D5(a,z.gJZ(c)))}},
 YJ:{
-"^":"r:70;",
+"^":"r:71;",
 $3:function(a,b,c){J.pR(c,a)}},
 DO:{
-"^":"r:70;",
+"^":"r:71;",
 $3:function(a,b,c){var z,y,x
 z=J.RE(c)
 y=z.geT(c)
@@ -6103,14 +6103,14 @@ x=J.RE(b)
 y=(b==null?y==null:b===y)?x.gIt(b):x.gJZ(b)
 z.sG6(c,J.WB(a,J.xH(J.D5(y,z.gJZ(c)),2)))}},
 lP:{
-"^":"r:70;",
+"^":"r:71;",
 $3:function(a,b,c){var z,y,x
 z=J.RE(c)
 y=z.geT(c)
 x=J.RE(b)
 z.sG6(c,J.D5(J.WB(a,(b==null?y==null:b===y)?x.gIt(b):x.gJZ(b)),z.gJZ(c)))}},
 Uf:{
-"^":"r:70;",
+"^":"r:71;",
 $3:function(a,b,c){var z,y,x
 z=J.RE(c)
 y=z.geT(c)
@@ -7347,17 +7347,17 @@ z=window.innerWidth
 y=window.innerHeight
 x=this.Q
 if(!J.mG(x.a.Q,z)||J.UN(x.a.a,y)){x.a=new L.tx(z,y)
-V.nZ()}},"$1",null,2,0,null,71,"call"]},
+V.nZ()}},"$1",null,2,0,null,72,"call"]},
 y2:{
 "^":"r:32;",
-$1:[function(a){V.nZ()},"$1",null,2,0,null,71,"call"]},
+$1:[function(a){V.nZ()},"$1",null,2,0,null,72,"call"]},
 YJG:{
 "^":"r:32;",
 $1:[function(a){var z,y
 z=$.aH()
 y=new F.vk(J.G0(a),"activate",Date.now(),!1,null,null)
 y.xw("activate",null)
-z.FL(y)},"$1",null,2,0,null,71,"call"]},
+z.FL(y)},"$1",null,2,0,null,72,"call"]},
 SS:{
 "^":"a;q6:Q>,a,b"},
 lL:{
@@ -7486,7 +7486,7 @@ FM:function(){return this.q9(null)},
 Zj:function(a){this.a.h(0,a)
 this.Q.y9(0,"",new N.JP(this),0)},
 xR:["mt",function(a,b){if(!this.wU(a,b)){if(a!=null)this.a.h(0,a)}else if(a!=null)this.Ej(a,b)
-else this.yg()},function(){return this.xR(null,!1)},"fZ","$2",null,"gaj",0,4,null,0,72],
+else this.yg()},function(){return this.xR(null,!1)},"fZ","$2",null,"gaj",0,4,null,0,73],
 Ux:function(a){this.Wx(a)},
 yg:function(){var z,y,x,w,v,u,t,s,r,q
 z=[]
@@ -7666,22 +7666,22 @@ case"nth-child":return new F.aM()
 case"last-nth-child":return new F.aG()
 default:return}}}},
 eX:{
-"^":"r:73;",
+"^":"r:74;",
 $2:function(a,b){return b==null&&a.a.gA7()==null}},
 Tp:{
-"^":"r:73;",
+"^":"r:74;",
 $2:function(a,b){return b==null&&a.a.gC9()==null}},
 nc:{
-"^":"r:73;",
+"^":"r:74;",
 $2:function(a,b){return b==null&&a.a.gA7()==null&&a.a.gC9()==null}},
 bs:{
-"^":"r:73;",
+"^":"r:74;",
 $2:function(a,b){return b==null&&a.a.gyi()===0}},
 aM:{
-"^":"r:73;",
+"^":"r:74;",
 $2:function(a,b){return b!=null}},
 aG:{
-"^":"r:73;",
+"^":"r:74;",
 $2:function(a,b){return b!=null}},
 XV:{
 "^":"a;CJ:Q<,Zi:a<",
@@ -8455,7 +8455,7 @@ z.Wu()
 return z})
 
 
-init.metadata=[,"object","sender","e",{func:"uO",args:[P.I]},"closure","isolate","numberOfArguments","arg1","arg2","arg3","arg4",{func:"n9",void:true,args:[{func:"X0",void:true}]},{func:"X0",void:true},{func:"G5",void:true,args:[null]},"value",{func:"mQ",void:true,args:[null],opt:[P.mE]},"error","stackTrace",{func:"Ib",ret:P.a2,args:[null,null]},{func:"bX",ret:P.KN,args:[null]},"a",{func:"E0",ret:P.a2,args:[P.a,P.a]},{func:"ZY",ret:P.KN,args:[P.a]},{func:"Vv",ret:P.a2,args:[W.cv,P.I,P.I,W.JQ]},"element","attributeName","context","callback","captureThis","self","arguments",{func:"aB",args:[null]},"o",{func:"uJ",ret:P.a,args:[null]},{func:"Hy",void:true,args:[P.E4]},"fs","fileEntry","invocation",{func:"NT"},"x",{func:"Za",args:[P.I,null]},{func:"np",args:[null,P.I]},"_",{func:"xO",args:[{func:"X0",void:true}]},{func:"BG",args:[null],opt:[null]},{func:"Uf",ret:P.a2},"ignored","data",{func:"bb",args:[null,P.mE]},{func:"N5",void:true,args:[null,P.mE]},"arg","each",0,"k","v",{func:"bh",args:[null,null]},{func:"lv",args:[P.wv,null]},{func:"Pt",ret:P.I,args:[P.KN]},{func:"ag",args:[P.I,P.I]},"attr",{func:"qu",void:true,args:[W.KV]},"s","networks",{func:"Pz",void:true,args:[[P.zM,P.I]]},"device",{func:"hL",args:[O.Qa]},"ex","st",{func:"WE",args:[P.cT]},{func:"Q5",args:[P.KN,null,V.jR]},"event",!1,{func:"G9",args:[F.RH,P.I]},];$=null
+init.metadata=[,"object","sender","e",{func:"uO",args:[P.I]},"closure","isolate","numberOfArguments","arg1","arg2","arg3","arg4",{func:"n9",void:true,args:[{func:"X0",void:true}]},{func:"X0",void:true},{func:"G5",void:true,args:[null]},"value",{func:"mQ",void:true,args:[null],opt:[P.mE]},"error","stackTrace",{func:"Ib",ret:P.a2,args:[null,null]},{func:"bX",ret:P.KN,args:[null]},"a",{func:"E0",ret:P.a2,args:[P.a,P.a]},{func:"ZY",ret:P.KN,args:[P.a]},{func:"Vv",ret:P.a2,args:[W.cv,P.I,P.I,W.JQ]},"element","attributeName","context","callback","captureThis","self","arguments",{func:"aB",args:[null]},"o",{func:"uJ",ret:P.a,args:[null]},{func:"Hy",void:true,args:[P.E4]},"fs","fileEntry","invocation",{func:"NT"},"x",{func:"Za",args:[P.I,null]},{func:"np",args:[null,P.I]},"_",{func:"xO",args:[{func:"X0",void:true}]},{func:"BG",args:[null],opt:[null]},{func:"Uf",ret:P.a2},"ignored","data",{func:"bb",args:[null,P.mE]},{func:"N5",void:true,args:[null,P.mE]},"arg","each",0,"k","v",{func:"bh",args:[null,null]},{func:"lv",args:[P.wv,null]},{func:"Pt",ret:P.I,args:[P.KN]},{func:"ag",args:[P.I,P.I]},"attr",{func:"qu",void:true,args:[W.KV]},"s","networks",{func:"Pz",void:true,args:[[P.zM,P.I]]},{func:"nE",void:true,args:[P.zM]},"device",{func:"hL",args:[O.Qa]},"ex","st",{func:"WE",args:[P.cT]},{func:"Q5",args:[P.KN,null,V.jR]},"event",!1,{func:"G9",args:[F.RH,P.I]},];$=null
 I = I.$finishIsolateConstructor(I)
 $=new I()
 function convertToFastObject(a){function MyClass(){}MyClass.prototype=a

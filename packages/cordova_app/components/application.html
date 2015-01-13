@@ -1,11 +1,8 @@
 <div ng-switch="deviceInitialized">
-  <div ng-switch-when="false">
-    {{message}}
-  </div>
+  <!-- <div ng-switch-when="false"> -->
+    <!-- {{message}} -->
+  <!-- </div> -->
   <div ng-switch-when="true">
-	<h3>Hello {{name}}!</h3>
-	Name: <input type="text" ng-model="name">
-
     <h3>Device Info</h3>
     <section id="details">
 	  <div>platform: {{deviceInfo.platform}}</div>
@@ -20,9 +17,9 @@
 		<div>X: {{accel.x}}</div>
 		<div>Y: {{accel.y}}</div>
 		<div>Z: {{accel.z}}</div>
-		<div>X: {{getAccelCoord("x")}}</div>
-		<div>Y: {{getAccelCoord("y")}}</div>
-		<div>Z: {{getAccelCoord("z")}}</div>
+		<!-- <div>X: {{getAccelCoord("x")}}</div> -->
+		<!-- <div>Y: {{getAccelCoord("y")}}</div> -->
+		<!-- <div>Z: {{getAccelCoord("z")}}</div> -->
       </section>
 	<!-- </div> -->
 	<!-- <ng-view></ng-view> -->

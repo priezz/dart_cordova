@@ -1,7 +1,4 @@
 <div ng-switch="deviceInitialized">
-  <!-- <div ng-switch-when="false"> -->
-    <!-- {{message}} -->
-  <!-- </div> -->
   <div ng-switch-when="true">
     <h3>Device Info</h3>
     <section id="details">
@@ -12,9 +9,12 @@
     </section>
     <h3>Device Position</h3>
     <section id="accelerator">
-	  <div>X: {{accel.x.toString()}}</div>
-	  <div>Y: {{accel.y.toString()}}</div>
-	  <div>Z: {{accel.z.toString()}}</div>
+	  <!-- <div>X: {{accel.x.toString()}}</div> -->
+	  <!-- <div>Y: {{accel.y.toString()}}</div> -->
+	  <!-- <div>Z: {{accel.z.toString()}}</div> -->
+	  <div>X: {{getStr(accel.x)}}</div>
+	  <div>Y: {{getStr(accel.y)}}</div>
+	  <div>Z: {{getStr(accel.z)}}</div>
 	  <!-- <div>X: {{getAccelCoord("x")}}</div> -->
 	  <!-- <div>Y: {{getAccelCoord("y")}}</div> -->
 	  <!-- <div>Z: {{getAccelCoord("z")}}</div> -->

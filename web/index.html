@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+	<title>Hello Cordova</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+	  [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	    display: none !important;
+	  }
+	</style>
+
+	<link rel="stylesheet" href="assets/stylesheets/style.css">
+    <script src="packages/web_components/webcomponents.js"></script>
+    <script src="packages/web_components/dart_support.js"></script>
+  </head>
+  <body>
+	<application ng-cloak></applicaton>
+
+	<script type="application/dart" src="main.dart"></script>
+	<script src="packages/browser/dart.js"></script>
+	<script src="assets/vendor/PageSlider/lib/fastclick.js"></script>
+	<script>
+	  FastClick.attach(document.body);
+	</script>
+	<script src="cordova.js"></script>
+  </body>
+</html>

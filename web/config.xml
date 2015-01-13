@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+	id				= "com.blueshift.dartcordova"
+	version			= "0.0.1"
+	xmlns			= "http://www.w3.org/ns/widgets"
+	xmlns:cdv		= "http://cordova.apache.org/ns/1.0"
+	xmlns:gap		= "http://phonegap.com/ns/1.0"
+	xmlns:android	= "http://schemas.android.com/apk/res/android"
+	>
+
+    <name>Dart Cordova test</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event called from Dart app.
+    </description>
+    <author email="a@priezz.net" href="https://github.com/priezz">
+        Alexandr Priezzhev
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+
+	<icon src="icon.png" />
+
+	<gap:platform name="android" />
+	<!-- gap:platform name="ios" / -->
+	<gap:platform name="ubuntu" />
+	<gap:platform name="browser" />
+	<gap:platform name="firefoxos" />
+	<gap:platform name="blackberry10" />
+	<gap:platform name="amazon-fireos" />
+	<!-- gap:platform name="winphone" /-->
+
+	<preference name="fullscreen" value="false" />
+
+	<feature name="http://api.phonegap.com/1.0/device" />
+	<feature name="http://api.phonegap.com/1.0/file" />
+	<feature name="http://api.phonegap.com/1.0/network" />
+	<feature name="http://api.phonegap.com/1.0/notification" />
+	<feature name="http://api.phonegap.com/1.0/geolocation" />
+
+	<!-- http://plugins.cordova.io -->
+
+	<!-- push - https://github.com/phonegap-build/PushPlugin/blob/1979d97/README.md -->
+	<gap:plugin name="org.apache.cordova.device" />
+	<gap:plugin name="org.apache.cordova.device-motion" /> <!-- http://plugins.cordova.io/#/package/org.apache.cordova.device-motion -->
+	<!-- gap:plugin name="org.apache.cordova.console" / -->
+	<gap:plugin name="org.apache.cordova.dialogs"/>
+	<gap:plugin name="org.apache.cordova.file"/>
+	<gap:plugin name="org.apache.cordova.geolocation"/>
+	<!-- gap:plugin name="org.apache.cordova.network-information"/ --> <!-- https://github.com/apache/cordova-plugin-network-information/blob/df7aac845dc7deddbdb76e89216776a802ee8b67/doc/index.md -->
+	<gap:plugin name="com.pylonproducts.wifiwizard"/> <!-- http://plugins.cordova.io/#/package/com.pylonproducts.wifiwizard -->
+	<gap:plugin name="nl.nielsad.cordova.wifiscanner" source="plugins.cordova.io" /> <!-- http://plugins.cordova.io/#/package/nl.nielsad.cordova.wifiscanner -->
+	<gap:plugin name="com.connectivity.monitor" source="plugins.cordova.io" /> <!-- http://plugins.cordova.io/#/package/com.connectivity.monitor -->
+	<gap:plugin name="com.ccsoft.plugin.androidemail" source="plugins.cordova.io" /> <!-- http://plugins.cordova.io/#/package/com.ccsoft.plugin.androidemail -->
+	<gap:plugin name="com.google.playservices" source="plugins.cordova.io" />
+	<gap:plugin name="com.analytics.google" source="plugins.cordova.io" /> <!-- http://plugins.cordova.io/#/package/com.analytics.google -->
+	<gap:plugin name="com.analytics.adid.google" source="plugins.cordova.io" /> <!-- http://plugins.cordova.io/#/package/com.analytics.adid.google -->
+	<gap:plugin name="org.apache.cordova.dialogs" source="plugins.cordova.io" /> <!-- https://github.com/apache/cordova-plugin-dialogs/blob/master/doc/index.md -->
+
+</widget>

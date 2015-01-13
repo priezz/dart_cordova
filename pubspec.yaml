@@ -1,0 +1,39 @@
+name: cordova_app
+dependencies:
+  angular: ">= 1.0.0" # fix to be applied https://github.com/angular/angular.dart/pull/1557
+  web_components: any
+  browser: any
+  rikulo_gap: any
+  async_await:
+    git: https://github.com/dart-lang/async_await.git
+
+dependency_overrides:
+  barback: ">=0.15.0"
+  analyzer: ">=0.22.0"
+
+  html5lib: ">=0.12.0"
+  observe: ">=0.12.2"
+  di: ">=3.3.3"
+  args: ">=0.12.2"
+  smoke: ">=0.2.1"
+  route_hierarchical: ">=0.6.1"
+  code_transformers: ">=0.2.3"
+  collection: ">=1.1.0"
+  intl: ">=0.12.0"
+
+
+transformers:
+  - async_await
+  - angular:
+      html_files:
+        - lib/components/application.html
+  - $dart2js:
+      checked: false
+      minify: true
+      verbose: true
+      # analyzeAll: false
+      commandLineOptions: [--show-package-warnings --enable-enum --enable-async] #, --dump-info]
+      suppressWarnings: false
+      suppressHints: false
+      terse: true
+      csp: true

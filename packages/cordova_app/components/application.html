@@ -10,18 +10,14 @@
 	  <div>version: {{deviceInfo.version}}</div>
 	  <div>uuid: {{deviceInfo.uuid}}</div>
     </section>
-	<!-- <div ng-if="accel != null"> -->
-	<div>
-      <h3>Device Position</h3>
-      <section id="accelerator">
-		<div>X: {{accel.x}}</div>
-		<div>Y: {{accel.y}}</div>
-		<div>Z: {{accel.z}}</div>
-		<!-- <div>X: {{getAccelCoord("x")}}</div> -->
-		<!-- <div>Y: {{getAccelCoord("y")}}</div> -->
-		<!-- <div>Z: {{getAccelCoord("z")}}</div> -->
-      </section>
-	<!-- </div> -->
-	<!-- <ng-view></ng-view> -->
+    <h3>Device Position</h3>
+    <section id="accelerator">
+	  <div>X: {{accel.x}}</div>
+	  <div>Y: {{accel.y}}</div>
+	  <div>Z: {{accel.z}}</div>
+	  <div>X: {{getAccelCoord("x")}}</div>
+	  <div>Y: {{getAccelCoord("y")}}</div>
+	  <div>Z: {{getAccelCoord("z")}}</div>
+    </section>
   </div>
 </div>

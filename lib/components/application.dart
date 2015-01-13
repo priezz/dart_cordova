@@ -41,13 +41,6 @@ class ApplicationComponent {
 		                                );
 	}
 
-	String getAccelCoord(String coord) {
-		if (_accel == null) return "";
-		if (coord == 'x') return _accel.x.toString();
-		if (coord == 'y') return _accel.y.toString();
-		if (coord == 'z') return _accel.z.toString();
-	}
-
 	String getStr(num v) => v.toString();
 
 	void _update(Timer timer) {
